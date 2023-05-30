@@ -1,5 +1,5 @@
 # PyPSA NetView - Visualize PyPSA networks
-PyPSA NetView automatically creates a visual representation of a given PyPSA network, showing buses, components on buses and links between buses. This is intended to help understand the network that is being worked on. PyPSA NetView is not at all done, but feel free to look around anyways.
+PyPSA NetView automatically creates a visual representation of a given PyPSA network, showing buses, components on buses and links between buses. This is intended to help understand the network that is being worked on. PyPSA NetView is not at all done, and cant yet be installed with ```pip``` but feel free to look around anyways.
 
 The files required to use PyPSA NetView are located in the pypsa_netview directory, and are
 ```python
