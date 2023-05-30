@@ -1,5 +1,5 @@
 # PyPSA NetView - Visualize PyPSA networks
-PyPSA NetView automatically creates a visual representation of a given PyPSA network, showing buses, components on buses and links between buses. This is intended to help understand the network that is being worked on. PyPSA NetView is not at all done, and cant yet be installed with ```pip``` but feel free to look around anyways.
+PyPSA NetView automatically creates a visual representation of a given PyPSA network, showing buses, components on buses and links between buses. PyPSA NetView is not at all done, and cant yet be installed with ```pip``` but feel free to look around anyways.
 
 The files required to use PyPSA NetView are located in the pypsa_netview directory, and are
 ```python
@@ -8,7 +8,15 @@ helper_functions.py
 custom_elements.py
 ```
 
-PyPSA NetView is built on the ![Schemdraw package](https://github.com/RonSheely/schemdraw). By default, PyPSA NetView will create a circular layout with each bus being a point on a circle.  
+PyPSA NetView is built on the ![Schemdraw package](https://github.com/RonSheely/schemdraw). 
+
+Limitations
+------------
+- By default, PyPSA NetView will create a circular layout with each bus being a point on a circle. Custom positioning is possible, but not implemented in a good way yet.
+
+- PyPSA NetView can currently only visualize certain components on a bus. These are Loads, Generators and Stores. StorageUnits and the like are not supported yet.
+
+- PyPSA NetView will always show the entire network. A more elegant solution is to come.
 
 Input parameters
 ------------
