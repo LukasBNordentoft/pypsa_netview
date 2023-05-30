@@ -8,7 +8,7 @@ helper_functions.py
 custom_elements.py
 ```
 
-PyPSA NetView is built on the [Schemdraw package][https://github.com/RonSheely/schemdraw]. A drawing of the network can be created such as:
+PyPSA NetView is built on the ![Schemdraw package][https://github.com/RonSheely/schemdraw]. A drawing of the network can be created such as:
 ```python
 pypsa_netview.py
 helper_functions.py
