@@ -3,9 +3,11 @@ PyPSA NetView automatically creates a visual representation of a given PyPSA net
 
 Dependencies
 ------------
-PyPSA \b
-Schemdraw \b
-Pandas \b
+- PyPSA 
+
+- Schemdraw 
+
+- Pandas 
 
 ## Exmaples
 An exmaple of an unsolved two-bus network:
