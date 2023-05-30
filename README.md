@@ -8,7 +8,22 @@ helper_functions.py
 custom_elements.py
 ```
 
-PyPSA NetView is built on the ![Schemdraw package](https://github.com/RonSheely/schemdraw). The following code produces the example drawing with two buses:
+PyPSA NetView is built on the ![Schemdraw package](https://github.com/RonSheely/schemdraw). By default, PyPSA NetView will create a circular layout with each bus being a point on a circle.  
+
+Input parameters
+------------
+The following parameters can be passed to draw_network:
+
+- ```show_capcities = True```: If the network has been solved, show capacities for bus components and links
+
+ -```filename = 'yourdrawing.pdf' ```: A drawing can be saved as pdf by passing a filename.
+ 
+  -```spacing ```: increase or decrease
+  
+Code example
+------------
+
+The following code produces the example drawing with two buses:
 ```python
 import pypsa
 from pypsa_netview import draw_network
@@ -25,13 +40,6 @@ n.add("Generator", 'Generator1', bus = 'Bus1', p_nom = 20)
 n.lopf()
 draw_network(n)
 ```
-
-Input parameters
-------------
-The following parameters can be passed to draw_network:
-```show_capcities```: If the network has been solved, show capacities for bus components and links
-```filename```:
-
 
 Dependencies
 ------------
