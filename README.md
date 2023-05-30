@@ -11,7 +11,9 @@ Dependencies
 
 ## Exmaples
 An exmaple of an unsolved two-bus network:
+
 <img src="extra/two_bus_example.png" alt="Two bus network example" width="600">
 
 An example of a solved four-bus network:
+
 <img src="extra/four_bus_example.png" alt="Image Description" width="500">
