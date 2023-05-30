@@ -28,7 +28,9 @@ draw_network(n)
 
 Input parameters
 ------------
-Show capacities of components and links for a solved network by setting ```show_capcities = True```
+The following parameters can be passed to draw_network:
+```show_capcities```: If the network has been solved, show capacities for bus components and links
+```filename```:
 
 
 Dependencies
