@@ -16,9 +16,9 @@ The following parameters can be passed to draw_network:
 
 - ```show_capcities = True```: If the network has been solved, show capacities for bus components and links
 
- -```filename = 'yourdrawing.pdf' ```: A drawing can be saved as pdf by passing a filename.
+- ```filename = 'yourdrawing.pdf' ```: A drawing can be saved as pdf by passing a filename.
  
-  -```spacing ```: Increase or decrease distance betwene buses for automatically generated bus positions
+- ```spacing ```: Increase or decrease distance betwene buses for automatically generated bus positions
   
 Code example
 ------------
