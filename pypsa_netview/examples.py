@@ -9,30 +9,27 @@ import pypsa
 from pypsa_netview import draw_network
 
 #%% Two-bus network -----------------------------------------------------------
-# Create an empty network
+
 n = pypsa.Network()
 
 # Add buses
-n.add("Bus", "Bus0")
-n.add("Bus", "Bus1")
+n.madd('Bus',  ['Bus0', 'Bus1'])
 
-# Add links
-n.add("Link", "Link0", bus0="Bus0", bus1="Bus1", p_nom=20, p_min_pu=-1, p_max_pu=1)
+# Add bidirectional link
+n.add("Link", "Link0", bus0="Bus0", bus1="Bus1", p_nom=20, p_min_pu=-1,)
 
 # Set the load for Bus0
 n.add("Load", "Load0", bus="Bus0", p_set=10)
 
 # Set the generator for Bus1
-n.add("Generator", "Generator0", bus="Bus1", p_nom=20, control="P")
+n.add("Generator", "Generator1", bus="Bus1", p_nom=20)
 
-# Set the snapshots
-n.set_snapshots(range(5))
+# Solve the network or not
+n.lopf()
 
-# Solve the network
-# n.lopf()
-
-draw_network(n, show_capacities = True,
-             filename = 'two_bus_example.pdf')
+draw_network(n, 
+             # filename = 'two_bus_example.pdf'
+             )
 
 #%% four bus network ----------------------------------------------------------
 # Example case with four buses connected with unidirectional links
