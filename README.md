@@ -18,7 +18,7 @@ The following parameters can be passed to draw_network:
 
 - ```filename = 'yourdrawing.pdf' ```: A drawing can be saved as pdf by passing a filename.
  
-- ```spacing ```: Increase or decrease distance betwene buses for automatically generated bus positions
+- ```spacing ```: Increase or decrease distance between buses for automatically generated bus positions
   
 Code example
 ------------
