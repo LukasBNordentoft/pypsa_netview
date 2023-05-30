@@ -8,7 +8,7 @@ helper_functions.py
 custom_elements.py
 ```
 
-PyPSA NetView is built on the ![Schemdraw package](https://github.com/RonSheely/schemdraw). A drawing of the network can be created such as:
+PyPSA NetView is built on the ![Schemdraw package](https://github.com/RonSheely/schemdraw). The following code produces the example drawing with two buses:
 ```python
 import pypsa
 from pypsa_netview import draw_network
@@ -25,6 +25,11 @@ n.add("Generator", 'Generator1', bus = 'Bus1', p_nom = 20)
 n.lopf()
 draw_network(n)
 ```
+
+Input parameters
+------------
+Show capacities of components and links for a solved network by setting ```show_capcities = True```
+
 
 Dependencies
 ------------
