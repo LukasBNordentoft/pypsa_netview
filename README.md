@@ -34,7 +34,7 @@ Code example
 The following code produces the example drawing with two buses:
 ```python
 import pypsa
-from pypsa_netview import draw_network
+from pypsa_netview.draw import draw_network
 
 n = pypsa.Network()
 
